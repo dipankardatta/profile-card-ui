@@ -1,0 +1,150 @@
+/* Google Font - In use Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    display: flex;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+  }
+
+  .profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background: #fff;
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    position: relative;
+  }
+  
+
+  .profile-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 100%;
+    border-radius: 24px 24px 0px 0px;
+    background-color: #003C43;
+  }
+  
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #77B0AA;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.image .profile-image{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+@keyframes spinAnimate {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
+
+
+.profile-card .text-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-data .name{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.text-data .job{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.profile-card .media-button {
+     display: flex;
+     align-items: center;
+     margin-top: 17px;
+}
+
+.media-button .link {
+    display: flex;
+    text-decoration: none;
+    background-color: #4070f4;
+    margin: 0px 8px;
+    font-size: 18px;
+    height: 34px;
+    width: 34px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+
+}
+
+.profile-card .buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.buttons .button {
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    border-radius: 24px;
+    color: white;
+    margin: 0px 8px ;
+    padding: 8px 24px;
+    background-color: #77B0AA;
+    cursor:pointer;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+
+.buttons #drive-link {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.buttons .button:hover {
+    background-color: #135D66;
+}
+
+.profile-card .experience {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.experience .data {
+    display: flex;
+    font-size: 30px;
+    margin-right: 15px;
+    align-items: center;
+}
+
+
